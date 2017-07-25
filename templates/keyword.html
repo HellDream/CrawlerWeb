@@ -1,0 +1,56 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="{% static 'css/base.css' %}"><!--fontawesome-css-->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all" /> <!-- Style-CSS -->
+    <link href="http://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet"><!--online fonts-->
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet"><!--online fonts-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+    <section class="agile-main">
+    <div class="agile-head">
+        <h1>Crawler Web</h1>
+        <p>This is a project to crawl weibo</p>
+        {% if not key.has_weibo %}
+            <h3><strong> Trying hard to crawl {{ key.keyword }} ...</strong></h3>
+        {% endif %}
+    </div>
+    </section>
+    <div class="container">
+        <div class="row">
+            {% for tweet in tweets  %}
+            <div class="col-md-6">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h5 class="panel-title"> @{{ tweet.username }}<small>{{ tweet.timestamp }}</small></h5>
+                    </div>
+                    <div class="panel-body">
+                        {{ tweet.content }}
+                    </div>
+                    {% if tweet.location %}
+
+                    <div class="panel-footer">
+                        <a href="{% url 'weibo:map' tweet.pk %}">
+                            {{ tweet.location }}
+                        </a>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+
+
+
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

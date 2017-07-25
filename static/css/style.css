@@ -1,0 +1,201 @@
+a{
+    transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+	font-weight:400;
+    font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+    text-decoration: none;
+    margin-left: 50px;
+}
+input[type="button"],input[type="submit"]{
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+h1,h2,h4,h5,h6{
+	margin:0;
+	font-weight:400;
+    transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+    color: white;
+
+}
+.clear {
+	clear:both;
+}
+p{
+	margin:0;
+}
+
+ul{
+	margin:0;
+	padding:0;
+}
+label{
+	margin:0;
+}
+.text-center {
+	text-align:center;
+}
+img{
+	width:100%;
+}
+/*--main--*/
+.agile-head h1 {
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    padding: 1em 0em 0em;
+    color: #fff;
+   font-family: 'Lato', sans-serif;
+}
+.agile-head p {
+	font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+/*--subscribe--*/
+.agile-crawler {
+    text-align: center;
+}
+.agile-crawler p {
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: #ffffff;
+	padding:0em 0em 1em	;
+	font-family: 'Lato', sans-serif;
+}
+.agile-crawler input[type="text"] {
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    width: 25%;
+	border: none;
+    outline: none;	
+    padding: 0.8em 1em 0.8em;
+    vertical-align: middle;
+    font-family: 'Raleway', sans-serif;
+}
+.agile-crawler input[type="submit"] {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding: 0.8em 1.5em;
+	vertical-align: middle;
+	cursor:pointer;
+	font-family: 'Lato', sans-serif;
+}
+.agile-crawler input[type="submit"] {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.45em 1.5em;
+    background: #f3c007;
+    color: #fff;
+    border: none;
+    outline: none;
+	vertical-align: middle;
+   font-family: 'Lato', sans-serif;
+}
+.agile-crawler input[type="submit"]:hover {
+    background: #45b57c;
+    color: #fff;
+}
+footer {
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: #fff;
+    padding:3em 0em 0em;
+	 font-family: 'Lato', sans-serif;
+}
+
+/*--/subscribe--*/
+
+
+/*--responsive--*/
+@media(max-width:1920px){
+	
+}
+@media(max-width:1680px){
+	
+}
+@media(max-width:1600px){
+	
+}
+@media(max-width:1440px){
+	
+	
+}
+@media(max-width:1366px){
+	
+}
+
+@media(max-width:667px){
+	.agile-head h1 {
+    font-size: 45px;
+}
+.agile-head p {
+    font-size: 13px;
+}
+}
+
+
+
+@media(max-width:600px){
+	.agile-head h1 {
+    font-size: 40px;
+}
+
+}
+@media(max-width:480px){
+	.agile-head p {
+    font-size: 15px;
+}
+}
+@media(max-width:414px){
+
+.agile-crawler input[type="text"]{
+    width: 60%;
+		margin-bottom:0.5em;
+}
+
+}
+@media(max-width:384px){
+	.agile-head h1 {
+    font-size: 37px;
+}
+.
+}
+@media(max-width:375px){
+	
+}
+@media(max-width:320px){
+	.agile-head h1 {
+    font-size: 31px;
+}
+}
+/*--/responsive--*/
