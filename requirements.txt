@@ -8,7 +8,7 @@ billiard==3.3.0.23
 bs4==0.0.1
 celery==3.1.25
 celery-with-redis==3.0
-certifi==2017.4.17
+certifi==2022.12.7
 cffi==1.10.0
 chardet==3.0.4
 constantly==15.1.0
